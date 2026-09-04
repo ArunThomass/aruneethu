@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#25372a" />
+    <meta name="description" content="Join us as Arun Thomas and Neethu Babu begin their forever on 13 September 2026." />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Arun Thomas &amp; Neethu Babu | Wedding Invitation" />
+    <meta property="og:description" content="Join us as Arun Thomas and Neethu Babu begin their forever on 13 September 2026." />
+    <meta property="og:image" content="https://arun-and-neethu.example/assets/images/og-wedding-invitation.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="en_IN" />
+    <!-- Before deploying, replace this placeholder with the public site URL. -->
+    <meta property="og:url" content="https://arun-and-neethu.example/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Arun Thomas &amp; Neethu Babu | Wedding Invitation" />
+    <meta name="twitter:description" content="Join us as Arun Thomas and Neethu Babu begin their forever on 13 September 2026." />
+    <meta name="twitter:image" content="https://arun-and-neethu.example/assets/images/og-wedding-invitation.jpg" />
+    <link rel="canonical" href="https://arun-and-neethu.example/" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Pinyon+Script&display=swap" rel="stylesheet" />
+    <link rel="preload" as="image" href="assets/images/hero.webp" type="image/webp" />
+    <link rel="preload" as="audio" href="assets/love-story-fur-elise.mp3" type="audio/mpeg" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="config.js"></script>
+    <script defer src="app.js"></script>
+    <title>Arun Thomas &amp; Neethu Babu | Wedding Invitation</title>
+  </head>
+  <body class="invitation-sealed">
+    <main id="invitation" class="invitation" aria-label="Wedding invitation">
+      <section class="cover" id="cover" aria-label="Wedding invitation cover">
+        <div class="cover__image" role="img" aria-label="Arun and Neethu together by the sea"></div>
+        <div class="cover__veil"></div>
+        <div id="cover-petals" class="cover__petals" aria-hidden="true"></div>
+        <div class="cover__content">
+          <p class="eyebrow cover__eyebrow" data-bind="copy.coverEyebrow">The Wedding Invitation</p>
+          <h1 class="cover__names"><span data-bind="couple.partnerA">Arun Thomas</span><i>&amp;</i><span data-bind="couple.partnerB">Neethu Babu</span></h1>
+          <div class="cover__line gold-shine" aria-hidden="true"></div>
+          <button id="open-invitation" class="open-button" type="button" aria-controls="invitation">
+            <span data-bind="copy.coverButton">Tap to open</span>
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 4v15m0 0 6-6m-6 6-6-6" /></svg>
+          </button>
+          <p class="cover__hint" data-bind="copy.coverHint">A little moment, made with love</p>
+        </div>
+      </section>
+
+      <button class="music-button" id="music-toggle" type="button" aria-label="Play music" aria-pressed="false" hidden>
+        <svg class="music-button__play" aria-hidden="true" viewBox="0 0 24 24"><path d="M8.5 6.5v11L18 12 8.5 6.5Z" /></svg>
+        <svg class="music-button__pause" aria-hidden="true" viewBox="0 0 24 24"><path d="M8 6v12m8-12v12" /></svg>
+        <span class="visually-hidden" id="music-status">Play music</span>
+      </button>
+      <audio id="background-music" preload="metadata" loop></audio>
+
+      <div class="page-shell" id="page-shell">
+        <section class="intro section section--intro">
+          <div class="ornament" aria-hidden="true"><span></span><svg viewBox="0 0 28 28"><path d="M14 2c0 8-4 12-12 12 8 0 12 4 12 12 0-8 4-12 12-12-8 0-12-4-12-12Z" /></svg><span></span></div>
+          <p class="eyebrow" data-bind="copy.introKicker">Together with our families</p>
+          <h2 class="display-title"><span data-bind="couple.partnerA">Arun Thomas</span><em>&amp;</em><span data-bind="couple.partnerB">Neethu Babu</span></h2>
+          <p class="intro__lead" data-bind="copy.introLead">We invite you to share in the joy of our new beginning.</p>
+          <p class="intro__message" data-bind="copy.introMessage">Some stories are written quietly, then all at once become a beautiful forever. With hearts full of love and gratitude, we would be honoured by your presence as we begin ours.</p>
+          <a class="scroll-cue" href="#date" aria-label="Scroll to wedding details"><span data-bind="copy.scrollLabel">Scroll to discover</span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6" /></svg></a>
+        </section>
+
+        <section class="section section--date" id="date">
+          <div class="section-heading reveal-on-scroll">
+            <p class="eyebrow" data-bind="copy.revealKicker">Save the date</p>
+            <div class="gold-shine heading-line" aria-hidden="true"></div>
+          </div>
+          <div class="scratch-card reveal-on-scroll" id="scratch-card">
+            <div class="scratch-card__art" aria-hidden="true"><span class="scratch-card__flower scratch-card__flower--one">✿</span><span class="scratch-card__flower scratch-card__flower--two">✦</span></div>
+            <div class="date-details" id="date-details">
+              <p class="date-details__weekday" data-bind="wedding.dateDisplay">Sunday, 13 September 2026</p>
+              <p class="date-details__day">13</p>
+              <p class="date-details__month">September <span>2026</span></p>
+              <div class="date-details__rule"></div>
+              <p class="date-details__time" data-bind="wedding.time">12:30 PM</p>
+              <p class="date-details__venue" data-bind="venues.ceremony.name">St. Thomas Church, Villadam</p>
+            </div>
+            <canvas id="scratch-canvas" class="scratch-card__canvas" aria-label="Scratch this card to reveal the wedding date"></canvas>
+            <div class="scratch-card__prompt" id="scratch-prompt"><span data-bind="copy.scratchPrompt">Gently scratch to reveal our day</span></div>
+          </div>
+          <button id="reveal-date" class="text-button" type="button" aria-controls="date-details" data-bind="copy.revealButton">Reveal our day</button>
+          <div id="petal-burst" class="petal-burst" aria-hidden="true"></div>
+        </section>
+
+        <section class="section section--countdown">
+          <div class="countdown-card reveal-on-scroll">
+            <p class="eyebrow eyebrow--light" data-bind="copy.countdownKicker">Counting down to forever</p>
+            <div class="countdown" id="countdown" aria-live="polite">
+              <div><b data-countdown="days">000</b><span data-bind="copy.daysLabel">Days</span></div>
+              <div><b data-countdown="hours">00</b><span data-bind="copy.hoursLabel">Hours</span></div>
+              <div><b data-countdown="minutes">00</b><span data-bind="copy.minutesLabel">Minutes</span></div>
+              <div><b data-countdown="seconds">00</b><span data-bind="copy.secondsLabel">Seconds</span></div>
+            </div>
+            <p id="countdown-ended" class="countdown__ended" hidden data-bind="copy.countdownEnded">Today is the day — we cannot wait to celebrate with you.</p>
+          </div>
+        </section>
+
+        <section class="section story-section">
+          <div class="story-section__photo reveal-on-scroll"><img id="story-photo" src="assets/images/umbrella.webp" alt="Arun and Neethu walking hand in hand under an umbrella by the beach" loading="lazy" /></div>
+          <div class="story-section__content reveal-on-scroll">
+            <p class="eyebrow" data-bind="copy.storyKicker">A little of our story</p>
+            <h2 class="section-title" data-bind="copy.storyTitle">A love worth celebrating</h2>
+            <p data-bind="copy.storyMessage">From simple moments to a promise for a lifetime, every step has led us here. We cannot wait to make this memory with the people who mean the most to us.</p>
+          </div>
+        </section>
+
+        <section class="section gallery-section">
+          <div class="section-heading reveal-on-scroll">
+            <p class="eyebrow" data-bind="copy.galleryKicker">Our moments</p>
+            <h2 class="section-title" data-bind="copy.galleryTitle">Made of soft skies and shared smiles</h2>
+          </div>
+          <div class="gallery" id="gallery" aria-label="Photo gallery"></div>
+        </section>
+
+        <section class="section details-section" id="details">
+          <div class="section-heading reveal-on-scroll">
+            <p class="eyebrow" data-bind="copy.detailsKicker">Celebrate with us</p>
+            <div class="gold-shine heading-line" aria-hidden="true"></div>
+          </div>
+          <div class="venue-list">
+            <article class="venue-card reveal-on-scroll">
+              <div class="venue-card__icon" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M5 27h22M8 27V14l8-8 8 8v13M12 27v-7h8v7M16 6V3M4 14h24" /></svg></div>
+              <p class="eyebrow" data-bind="venues.ceremony.label">Wedding Ceremony</p>
+              <h2 class="venue-card__title" data-bind="venues.ceremony.name">St. Thomas Church, Villadam</h2>
+              <p class="venue-card__date"><span data-bind="wedding.dateShort">13 September 2026</span> · <span data-bind="wedding.time">12:30 PM</span></p>
+              <a class="location-button" data-bind-href="venues.ceremony.mapUrl" href="https://maps.app.goo.gl/wVDTxaJ7TwXPmTo88?g_st=aw" target="_blank" rel="noopener noreferrer"><span data-bind="copy.locationButton">View location</span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 21s6-5.28 6-11a6 6 0 1 0-12 0c0 5.72 6 11 6 11Z" /><circle cx="12" cy="10" r="2" /></svg></a>
+            </article>
+            <article class="venue-card venue-card--reception reveal-on-scroll">
+              <div class="venue-card__icon" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M5 27h22M8 27V14l8-8 8 8v13M12 27v-7h8v7M16 6V3M4 14h24" /></svg></div>
+              <p class="eyebrow" data-bind="venues.reception.label">Reception</p>
+              <h2 class="venue-card__title" data-bind="venues.reception.name">St. Francis Xavier's Parish Hall, Cheroor</h2>
+              <p class="venue-card__date"><span data-bind="wedding.dateShort">13 September 2026</span></p>
+              <a class="location-button" data-bind-href="venues.reception.mapUrl" href="https://share.google/aNrVlTv4QNaTzLnpd" target="_blank" rel="noopener noreferrer"><span data-bind="copy.locationButton">View location</span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 21s6-5.28 6-11a6 6 0 1 0-12 0c0 5.72 6 11 6 11Z" /><circle cx="12" cy="10" r="2" /></svg></a>
+            </article>
+          </div>
+        </section>
+
+        <footer class="closing section">
+          <div class="ornament ornament--closing" aria-hidden="true"><span></span><svg viewBox="0 0 28 28"><path d="M14 2c0 8-4 12-12 12 8 0 12 4 12 12 0-8 4-12 12-12-8 0-12-4-12-12Z" /></svg><span></span></div>
+          <p class="eyebrow" data-bind="copy.closingKicker">With love</p>
+          <h2 class="closing__names"><span data-bind="couple.partnerA">Arun Thomas</span> <em>&amp;</em> <span data-bind="couple.partnerB">Neethu Babu</span></h2>
+          <p data-bind="copy.closingMessage">Your blessings and presence will make our day complete.</p>
+        </footer>
+      </div>
+    </main>
+  </body>
+</html>
